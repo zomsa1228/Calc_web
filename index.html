@@ -2,17 +2,17 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>Dice Roll</title>
+<title>iOS Calc</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="CSS/style.css">
 
-
+<!-- 
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> -->
 
-<script src="./javascript/dice.js"></script>
+<script src="Script/Script.js"></script>
 <style>
     
 </style>
@@ -24,8 +24,12 @@
 
     <div class="container">
         
+        <div class="sub_msg">
+            <p id="sub_message">数値をクリックすると全部の数値が確認できます</p>
+        </div>
+
         <div class="Result_row">
-            <p id="Result">0</p>
+            <p id="Result" onclick="art()"></p>
         </div>
 
         <div class="plus">
@@ -45,11 +49,11 @@
         </div>
 
         <div class="equal">
-            <input type="button" id="kigou_equal" onclick="kigou(0)" value="=">
+            <input type="button" id="kigou_equal" onclick="calc()" value="=">
         </div>
 
         <div class="dot">
-            <input type="button" id="kigou_dot" onclick="kigou(5)" value=".">
+            <input type="button" id="kigou_dot" onclick="input_num('.')"value=".">
         </div>
 
         <div class="percent">
@@ -57,7 +61,7 @@
         </div>
 
         <div class="plus_minus">
-            <input type="button" id="kigou_plus_minus" onclick="kigou(7)" value="±">
+            <input type="button" id="kigou_plus_minus" onclick="plus_minus_fanc()" value="±">
         </div>
 
         <div class="ac">
