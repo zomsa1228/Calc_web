@@ -9,6 +9,9 @@ body{
     background-color: #000000;
     width:min-content; /* other browsers */
 }
+input{
+    text-align: center;
+}
 
 input[id*=button]{
      /* 角丸、枠線 */
