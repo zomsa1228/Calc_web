@@ -1,4 +1,12 @@
 @charset "UTF-8";
+
+html{
+    margin: 0;
+    padding: 0;
+    width:-moz-fit-content; /* Firefox */
+    width:fit-content; /* other browsers */
+}
+
 body{
     margin: 0;
     background-color: #000000;
@@ -6,7 +14,7 @@ body{
 
 input[id*=button]{
      /* 角丸、枠線 */
-     border-radius: 50% 50% 50% 50%;
+     border-radius: 5rem 5rem 5rem 5rem;
      border: rgba(0, 0, 0, 0);
    
     /* 背景 */
@@ -24,7 +32,7 @@ input[id*=button]{
 
 input[id*=button0]{
     /* 角丸、枠線 */
-    border-radius: 50px;
+    border-radius: 5rem;
     border: rgba(0, 0, 0, 0);
   
    /* 背景 */
@@ -42,7 +50,7 @@ input[id*=button0]{
 
 input[id*=kigou]{
     /* 角丸、枠線 */
-    border-radius: 50%;
+    border-radius: 5rem;
     border: rgba(0, 0, 0, 0);
   
    /* 背景 */
@@ -63,7 +71,7 @@ input[id*=kigou]{
 
 input[id*=kigou_dot]{
     /* 角丸、枠線 */
-    border-radius: 50%;
+    border-radius: 5rem;
     border: rgba(0, 0, 0, 0);
   
    /* 背景 */
@@ -82,7 +90,7 @@ input[id*=kigou_dot]{
 
 input[id*=kigou_percent]{
     /* 角丸、枠線 */
-    border-radius: 50%;
+    border-radius: 5rem;
     border: rgba(0, 0, 0, 0);
   
    /* 背景 */
@@ -101,7 +109,7 @@ input[id*=kigou_percent]{
 
 input[id*=kigou_plus_minus]{
     /* 角丸、枠線 */
-    border-radius: 50%;
+    border-radius: 5rem;
     border: rgba(0, 0, 0, 0);
   
    /* 背景 */
@@ -120,7 +128,7 @@ input[id*=kigou_plus_minus]{
 
 input[id*=All_Clear]{
     /* 角丸、枠線 */
-    border-radius: 50%;
+    border-radius: 5rem;
     border: rgba(0, 0, 0, 0);
   
    /* 背景 */
@@ -227,7 +235,8 @@ div{
 .container {
     margin: 0;
     background-color: black;
-    width: 23rem;
+    width: 100%;
+    height: 100%;
     padding: 5rem 1rem 2rem;
     display: grid;
     grid-template-columns: 5rem 5rem 5rem 5rem;
