@@ -1,2 +1,2 @@
 # Calc_web
- like ios calc apps
+このプロジェクトはIOS標準アプリの計算機をウェブ上で再現するのが目的です
