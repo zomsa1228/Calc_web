@@ -19,98 +19,101 @@
 </style>
 </head>
 
-<body onload="onload_fanc()">  
-    <div class="container">
-        
-        <div class="sub_msg">
-            <p id="sub_message">数値をクリックすると全部の数値が確認できます</p>
-        </div>
+<body>
+    <div class="outside">
+        <div class="container">
+            
+            <div class="sub_msg">
+                <hr>
+                <p id="sub_message">数値をクリックすると全部の数値が確認できます</p>
+            </div>
 
-        <div class="Result_row">
-            <p id="Result" onclick="art()">0</p>
-        </div>
+            <div class="Result_row">
+                <p id="Result" onclick="art()"></p>
+            </div>
 
-        <div class="plus">
-            <input type="button" id="kigou_plus" onclick="kigou(1)" value="+">
-        </div>
+            <div class="plus">
+                <input type="button" id="kigou_plus" onclick="kigou(1)" value="+">
+            </div>
 
-        <div class="minus">
-            <input type="button" id="kigou_minus" onclick="kigou(2)" value="-">
-        </div>
-        
-        <div class="times">
-            <input type="button" id="kigou_times" onclick="kigou(3)" value="×">
-        </div>
+            <div class="minus">
+                <input type="button" id="kigou_minus" onclick="kigou(2)" value="-">
+            </div>
+            
+            <div class="times">
+                <input type="button" id="kigou_times" onclick="kigou(3)" value="×">
+            </div>
 
-        <div class="division">        
-            <input type="button" id="kigou_division" onclick="kigou(4)" value="÷">
+            <div class="division">        
+                <input type="button" id="kigou_division" onclick="kigou(4)" value="÷">
+            </div>
+
+            <div class="equal">
+                <input type="button" id="kigou_equal" onclick="calc()" value="=">
+            </div>
+
+            <div class="dot">
+                <input type="button" id="kigou_dot" onclick="input_num('.')"value=".">
+            </div>
+
+            <div class="percent">
+                <input type="button" id="kigou_percent" onclick="kigou(6)" value="%">
+            </div>
+
+            <div class="plus_minus">
+                <input type="button" id="kigou_plus_minus" onclick="plus_minus_fanc()" value="±">
+            </div>
+
+            <div class="ac">
+                <input type="button" id="All_Clear" onclick="All_Clear()" value="AC">
+            </div>
+
+            <!-- <div class="c">
+                <input type="button" id="Clear" onclick="Clear()" value="c">
+            </div> -->
+
+            <div class="button0">
+                <input type="button" id="button0" onclick="input_num(0)" value="0">
+            </div>
+
+            <div class="button1">
+                <input type="button" id="button1" onclick="input_num(1)" value="1">
+            </div>
+
+            <div class="button2">
+                <input type="button" id="button2" onclick="input_num(2)" value="2">
+            </div>
+
+            <div class="button3">
+                <input type="button" id="button3" onclick="input_num(3)" value="3">
+            </div>
+
+            <div class="button4">
+                <input type="button" id="button4" onclick="input_num(4)" value="4">
+            </div>
+
+            <div class="button5">
+                <input type="button" id="button5" onclick="input_num(5)" value="5">
+            </div>
+
+            <div class="button6">
+                <input type="button" id="button6" onclick="input_num(6)" value="6">
+            </div>
+
+            <div class="button7">
+                <input type="button" id="button7" onclick="input_num(7)" value="7">
+            </div>
+
+            <div class="button8">
+                <input type="button" id="button8" onclick="input_num(8)" value="8">
+            </div>
+
+            <div class="button9">
+                <input type="button" id="button8" onclick="input_num(9)" value="9">
+            </div>
+
         </div>
-
-        <div class="equal">
-            <input type="button" id="kigou_equal" onclick="calc()" value="=">
-        </div>
-
-        <div class="dot">
-            <input type="button" id="kigou_dot" onclick="input_num('.')"value=".">
-        </div>
-
-        <div class="percent">
-            <input type="button" id="kigou_percent" onclick="kigou(6)" value="%">
-        </div>
-
-        <div class="plus_minus">
-            <input type="button" id="kigou_plus_minus" onclick="plus_minus_fanc()" value="±">
-        </div>
-
-        <div class="ac">
-            <input type="button" id="All_Clear" onclick="All_Clear()" value="AC">
-        </div>
-
-        <!-- <div class="c">
-            <input type="button" id="Clear" onclick="Clear()" value="c">
-        </div> -->
-
-        <div class="button0">
-            <input type="button" id="button0" onclick="input_num(0)" value="0">
-        </div>
-
-        <div class="button1">
-            <input type="button" id="button1" onclick="input_num(1)" value="1">
-        </div>
-
-        <div class="button2">
-            <input type="button" id="button2" onclick="input_num(2)" value="2">
-        </div>
-
-        <div class="button3">
-            <input type="button" id="button3" onclick="input_num(3)" value="3">
-        </div>
-
-        <div class="button4">
-            <input type="button" id="button4" onclick="input_num(4)" value="4">
-        </div>
-
-        <div class="button5">
-            <input type="button" id="button5" onclick="input_num(5)" value="5">
-        </div>
-
-        <div class="button6">
-            <input type="button" id="button6" onclick="input_num(6)" value="6">
-        </div>
-
-        <div class="button7">
-            <input type="button" id="button7" onclick="input_num(7)" value="7">
-        </div>
-
-        <div class="button8">
-            <input type="button" id="button8" onclick="input_num(8)" value="8">
-        </div>
-
-        <div class="button9">
-            <input type="button" id="button8" onclick="input_num(9)" value="9">
-        </div>
-
-      </div>
+    </div>
 
 </body>
 </html>

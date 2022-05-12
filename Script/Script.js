@@ -51,31 +51,40 @@ function calc(){
         textdata = document.getElementById('Result').innerHTML;
         val2 = parseFloat(textdata);
 
-    if(kigou_num == 1){
-        result_num = parseFloat(val1) + parseFloat(val2);
-        document.getElementById('Result').innerHTML = result_num.toString();
+        console.log("val2:"+val2)
+        
+        if(isNaN(val2)){
+            document.getElementById('Result').innerHTML = val1.toString();
 
-    }else if(kigou_num == 2){
-        result_num = parseFloat(val1) - parseFloat(val2);
-        document.getElementById('Result').innerHTML = result_num.toString();
+        }else{
+        
 
-    }else if(kigou_num == 3){
-        result_num = parseFloat(val1) * parseFloat(val2);
-        document.getElementById('Result').innerHTML = result_num.toString();
-        
-    }else if(kigou_num == 4){
-        result_num = parseFloat(val1) / parseFloat(val2);
-        document.getElementById('Result').innerHTML = result_num.toString();
-        
-    }else if(kigou_num == 5){
-        result_num = parseFloat(val1) + parseFloat(val2);
-        document.getElementById('Result').innerHTML = result_num.toString();
-        
-    }else if(kigou_num == 6){
-        result_num = parseFloat(val1) % parseFloat(val2);
-        document.getElementById('Result').innerHTML = result_num.toString();
-        
-    }   
+        if(kigou_num == 1){
+            result_num = parseFloat(val1) + parseFloat(val2);
+            document.getElementById('Result').innerHTML = result_num.toString();
+
+        }else if(kigou_num == 2){
+            result_num = parseFloat(val1) - parseFloat(val2);
+            document.getElementById('Result').innerHTML = result_num.toString();
+
+        }else if(kigou_num == 3){
+            result_num = parseFloat(val1) * parseFloat(val2);
+            document.getElementById('Result').innerHTML = result_num.toString();
+            
+        }else if(kigou_num == 4){
+            result_num = parseFloat(val1) / parseFloat(val2);
+            document.getElementById('Result').innerHTML = result_num.toString();
+            
+        }else if(kigou_num == 5){
+            result_num = parseFloat(val1) + parseFloat(val2);
+            document.getElementById('Result').innerHTML = result_num.toString();
+            
+        }else if(kigou_num == 6){
+            result_num = parseFloat(val1) % parseFloat(val2);
+            document.getElementById('Result').innerHTML = result_num.toString();
+            
+        }   
+    }
     
 }
 
